@@ -1,0 +1,138 @@
+@media (max-width: 1200px) {
+
+    .project__content, .project__technologies {
+        padding: 40px;
+        transition: padding 1s ease;
+    }
+
+    .fuyyr {
+        background-size: contain;
+    }
+
+    .project {
+        width: 80vw;
+        opacity: 0;
+    }
+
+    .project:nth-child(1) {
+        animation: blow 1s forwards 1s;
+    }
+
+    .project:nth-child(2) {
+        animation: blow 1s forwards 2s;
+    }
+
+    .project:nth-child(3) {
+        animation: blow 1s forwards 3s;
+    }
+
+    @keyframes blow {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .project__body {
+        flex: unset;
+    }
+
+    /* Header Widget */
+    header {
+        position: fixed;
+        top: unset;
+        bottom: 3%;
+        left: 50%;
+        width: 80%;
+        height: unset;
+        box-shadow: unset;
+        background-color: #17232E;
+        border: unset;
+        transform: translate(-50%, 0);
+        z-index: 1000;
+        transition: all 1s ease;
+    }
+
+    ul {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header:hover {
+        width: 80%;
+        transition: unset;
+        overflow-x: scroll;
+    }
+
+    .icon {
+        color: white;
+        font-size: 1em;
+    }
+
+    li {
+        line-height: unset;
+    }
+
+    #toggle__header {
+        width: 40px;
+        top: 3%;
+        right: 3%;
+        left: unset;
+        padding: .5em;
+        box-shadow: unset;
+    }
+
+    /* Home Page */
+
+    .home__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .text__primary {
+        font-size: unset;
+    }
+
+    .text {
+        color: white !important;
+    }
+
+    .btn {
+        box-shadow: 6px 5px 0 rgba(0, 0, 0);
+    }
+
+    .home__projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Parcours Page */
+
+    .experience__container {
+        background-image: url(../svg/timeline.svg);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .tech__stack img {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+@media (max-width: 480px) {
+
+}

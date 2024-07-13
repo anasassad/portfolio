@@ -1,0 +1,198 @@
+@import url(carousel.css);
+@import url(projects.css);
+@import url(about.css);
+
+:root {
+    --fullname: 10vw;
+}
+body,
+html {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 50px;
+    padding: 1em;
+    height: 50vh;
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 9px 0px #007bff;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+header:hover .text {
+    display: inline-flex;
+    text-decoration: none;
+    color: #000;
+}
+
+header:hover {
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px 20px;
+    color: #333;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+
+li:hover {
+    background-color: rgb(221, 221, 221, .3);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.icon {
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #007bff;
+}
+
+.text {
+    display: none;
+}
+
+li:hover .text {
+    transition: all 0.3s ease;
+    display: inline-flex;
+}
+
+#parcours {
+    position: relative;
+    overflow: hidden;
+}
+
+.text__primary {
+    max-width: 700px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    box-shadow: 15px 9px 0px rgba(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.voice__container {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.tech__stack {
+    display: flex;
+    flex-direction: column;
+    line-height: 4em;
+    margin: 10px;
+}
+
+.first__stack {
+    position: absolute;
+    top: 10vh;
+    right: 3vh;
+    animation: moveUp 10s linear infinite;
+}
+
+.second__stack {
+    position: absolute;
+    top: 10vh;
+    right: 14vh;
+    animation: moveDown 10s linear infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+.experience__container {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    background: url(../svg/timeline_details.svg) 0 50% no-repeat;
+    background-size: contain;
+}
+
+.experience__container img {
+    width: 100%;
+    height: auto;
+}
+
+#toggle__header {
+    width: 80px;
+    position: fixed;
+    top: 17%;
+    left: 2%;
+    cursor: pointer;
+    border: unset;
+    background-color: black;
+    color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 15px 9px 0px #007bff;
+}
+
+.first__name, .second__name {
+    font-size: var(--fullname);
+    font-weight: bold;
+}
+
+.first__name:hover, .second__name:hover {
+    text-shadow: 15px 9px 0px rgba(0, 0, 0, 0.1);
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+    color: coral;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
