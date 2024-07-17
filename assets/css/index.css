@@ -27,7 +27,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 15px 9px 0px #007bff;
+    background-color: white;
+    box-shadow: 15px 9px 0px #17232E;
     border: 1px solid black;
     overflow: hidden;
 }
@@ -74,7 +75,7 @@ li:hover {
     transition: all 0.3s ease;
     margin-right: 10px;
     font-size: 25px;
-    color: #007bff;
+    color: #17232E;
 }
 
 .text {
@@ -156,7 +157,7 @@ li:hover .text {
 }
 
 .experience__container {
-    width: 100vw;
+    width: 85vw;
     height: 100vh;
     justify-content: center;
     display: flex;
@@ -180,7 +181,7 @@ li:hover .text {
     color: #fff;
     padding: 1em;
     border-radius: 10px;
-    box-shadow: 15px 9px 0px #007bff;
+    box-shadow: 15px 9px 0px #17232E;
 }
 
 .first__name, .second__name {
