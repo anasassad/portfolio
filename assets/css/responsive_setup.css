@@ -42,16 +42,14 @@
         flex: unset;
     }
 
-    /* Header Widget */
-    header {
+    .header-container {
         position: fixed;
         top: unset;
         bottom: 3%;
         left: 50%;
-        width: 80%;
+        width: 90%;
         height: unset;
         box-shadow: unset;
-        background-color: #17232E;
         border: unset;
         transform: translate(-50%, 0);
         z-index: 1000;
@@ -65,10 +63,14 @@
         justify-content: space-evenly;
     }
 
+    header {
+        width: max-content;
+        height: unset;
+        background-color: #17232E;
+    }
+
     header:hover {
-        width: 80%;
-        transition: unset;
-        overflow-x: scroll;
+        width: max-content;
     }
 
     .icon {
@@ -81,9 +83,10 @@
     }
 
     #toggle__header {
+        position: absolute;
         width: 40px;
-        top: 3%;
-        right: 3%;
+        right: 0;
+        bottom: 0;
         left: unset;
         padding: .5em;
         box-shadow: unset;
